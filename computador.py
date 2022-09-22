@@ -13,7 +13,7 @@ class Computador:
                 resta = resultado_crudo * porcentaje
                 res = resultado_crudo - resta
                 return print(f"Valor alquiler: {resultado_crudo}\n"f"dias adicional: {resta}\n"f"Valor alquiler Total: {res}")
-            return print(f"Valor alquiler Total: {res}")
+            return print(f"Valor alquiler Total: {resultado_crudo}")
         else:
             print("El aquiler debe ser mayor a dos equipos")
             
