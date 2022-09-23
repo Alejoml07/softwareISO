@@ -10,9 +10,15 @@ class Computador:
             resultado_crudo = self.dias*mul
             if self.adicionales > 0 :
                 porcentaje = self.adicionales * 0.02
-                resta = resultado_crudo * porcentaje
-                res = resultado_crudo - resta
-                return print(f"Valor alquiler: {resultado_crudo}\n"f"dias adicional: {resta}\n"f"Valor alquiler Total: {res}")
+                resultado_add = self.adicionales * mul
+                if porcentaje > 1:
+                    porcentaje = 1   
+                else:
+                    porcentaje = porcentaje 
+                resta = resultado_add * porcentaje
+                resT = resultado_add - resta
+                total = resultado_crudo + resT
+                return print(f"Valor alquiler: {resultado_crudo}\n"f"dias adicional: {resta}\n"f"Valor alquiler Total: {total}")
             return print(f"Valor alquiler Total: {resultado_crudo}")
         else:
             print("El aquiler debe ser mayor a dos equipos")
@@ -31,10 +37,16 @@ class Computador:
             res = resultado_crudo + desc
             if self.adicionales > 0 :
                 porcentaje = self.adicionales * 0.02
-                resta = res * porcentaje
-                resT = res - resta
-                return print(f"Valor alquiler: {resultado_crudo} \n"f"dias adicional: {resta} \n"f" domicilio: {desc} \n"f"Total:{resT}")
-            return print(f"Valor alquiler: {resultado_crudo} \n"f" domicilio:{desc} \n"f"Valor alquiler Total: {res}\n")
+                resultado_add = self.adicionales * mul
+                if porcentaje > 1:
+                    porcentaje = 1   
+                else:
+                    porcentaje = porcentaje 
+                resta = resultado_add * porcentaje
+                resT = resultado_add - resta
+                total = resultado_crudo + resT
+                return print(f"Valor alquiler: {resultado_crudo} \n"f"dias adicional: {resta} \n"f"domicilio: {desc} \n"f"Total:{total}")
+            return print(f"Valor alquiler: {resultado_crudo} \n"f"domicilio:{desc} \n"f"Valor alquiler Total: {res}\n")
         else:
             print("El aquiler debe ser mayor a dos equipos")
                 
@@ -48,10 +60,16 @@ class Computador:
                 res = resultado_crudo - desc
                 if self.adicionales > 0 :
                     porcentaje = self.adicionales * 0.02
-                    resta = res * porcentaje
-                    resT = res - resta
-                    return print(f"Valor alquiler: {resultado_crudo}\n"f"dias adicional: {resta} \n"f"descuento: {desc}\n"f" To{resT}")
-                return print(f"Valor alquiler: {resultado_crudo}\n"f" descuento: {desc}\n""Valor alquiler Total {res}")
+                    resultado_add = self.adicionales * mul
+                    if porcentaje > 1:
+                        porcentaje = 1   
+                    else:
+                        porcentaje = porcentaje 
+                    resta = resultado_add * porcentaje
+                    resT = resultado_add - resta
+                    total = resultado_crudo + resT
+                    return print(f"Valor alquiler: {resultado_crudo}\n"f"dias adicional: {resta} \n"f"descuento: {desc}\n"f"Total{total}")
+                return print(f"Valor alquiler: {resultado_crudo}\n"f"descuento: {desc}\n""Valor alquiler Total {res}")
             else:
                 print("El aquiler debe ser mayor a dos equipos")
             

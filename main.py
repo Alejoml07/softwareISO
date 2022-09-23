@@ -66,7 +66,7 @@ if __name__ == "__main__":
                 dias = int (input("N·mero de dÝas que desea tomar el alquiler:  "))
                 adicionales = int(input("N·mero de dÝas adicionales que toma el alquiler:  "))
                 fuera_ciu = Computador(equipos,dias,adicionales)
-                print (f"Nombre:{cliente1.nombreC}\n","Email:{cliente1.emailC}\n","Email:{cliente1.idC}\n","Telefono: {cliente1.telefonoC}")
+                print (f"Nombre:{cliente1.nombreC}\n"f"Email:{cliente1.emailC}\n"f"Email:{cliente1.idC}\n"f"Telefono: {cliente1.telefonoC}")
                 comp = fuera_ciu.alquilarFueraCiudad()
                 
                 
@@ -76,7 +76,7 @@ if __name__ == "__main__":
                 dias = int (input("N·mero de dÝas que desea tomar el alquiler:  "))
                 adicionales = int(input("N·mero de dÝas adicionales que toma el alquiler:  "))
                 detro_establecimiento = Computador(equipos,dias,adicionales)
-                print (f"Nombre:{cliente1.nombreC}\n","Email:{cliente1.emailC}\n","Email:{cliente1.idC}\n","Telefono: {cliente1.telefonoC}")
+                print (f"Nombre:{cliente1.nombreC}\n"f"Email:{cliente1.emailC}\n"f"Email:{cliente1.idC}\n"f"Telefono: {cliente1.telefonoC}")
                 comp = detro_establecimiento.alquilarDentroLocal()
 
                 
