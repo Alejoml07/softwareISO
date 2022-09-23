@@ -52,6 +52,7 @@ if __name__ == "__main__":
                              """))
         
             if opt == 1:
+                
                 equipos = int (input("N·mero de equipos que desea alquilar:  "))
                 dias = int (input("N·mero de dÝas que desea tomar el alquiler:  "))
                 adicionales = int (input("N·mero de dÝas adicionales que toma el alquiler:  "))
@@ -78,6 +79,9 @@ if __name__ == "__main__":
                 detro_establecimiento = Computador(equipos,dias,adicionales)
                 print (f"Nombre:{cliente1.nombreC}\n"f"Email:{cliente1.emailC}\n"f"Email:{cliente1.idC}\n"f"Telefono: {cliente1.telefonoC}")
                 comp = detro_establecimiento.alquilarDentroLocal()
+            
+            elif opt > 3:
+                print('opcion incorrecta')
 
                 
             break 
